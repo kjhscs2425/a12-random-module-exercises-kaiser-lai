@@ -12,3 +12,13 @@ deck = []
 # sample a hand of 5 cards and print it out
 # (WITHOUT replacement -- no repeats!)
 #YOUR CODE HERE
+import random
+for suit in suits:
+    for value in values:
+        deck.append(value + suit)
+
+random.shuffle(deck)
+
+hand = random.sample(deck, 5)
+
+print("hand of 5 cards", hand)
